@@ -44,7 +44,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc(cfg.Server.Path, s.HandleRequest)
 
-	const listenPort = 8123
+	const listenPort = 9123
 	listenAddr := fmt.Sprintf(":%d", listenPort)
 	server := &http.Server{
 		Addr:    listenAddr,
